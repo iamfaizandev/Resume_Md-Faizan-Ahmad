@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "homepage": "https://github.com/iamfaizandev/Resume_Md-Faizan-Ahmad",
+  "description": "Md Faizan Ahmad Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "node": "^18.13.0"
+  }
+}

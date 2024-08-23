@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Inconsolata", monospace; */
+}
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+ol,
+ul {
+  padding-left: 0rem;
+}
+body {
+  display: flex;
+  background-color: rgb(40, 109, 193);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  margin: 5%;
+  position: relative;
+  width: 100%;
+  max-width: 60%;
+  min-height: 70rem;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.container .left_side {
+  position: relative;
+  background-color: rgb(18, 74, 91);
+  padding: 5%;
+  color: white;
+  background-image: url(./assets/logo-f.png);
+  background-repeat: no-repeat;
+  background-position-y: 1%;
+}
+
+.profile_name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.profile_name h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile_name h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.contact_info {
+  padding-top: 20px;
+}
+.title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 2%;
+  text-align: center;
+}
+.contact_info ul {
+  position: relative;
+}
+.contact_info ul li {
+  position: relative;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.box {
+  text-transform: uppercase;
+  color: turquoise;
+  font-size: 10px;
+}
+
+.tech_skill .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.tech_skill .box h6 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 3%;
+  font-size: 1.5em;
+}
+
+.tech_skill .box .progress_bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+}
+.tech_skill .box .progress_bar div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1c832f;
+}
+
+.Other-skills {
+  position: relative;
+  padding-left: 3%;
+}
+.Other-skills ul {
+  list-style-type: square;
+}
+.Other-skills li {
+  margin: 1%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  word-spacing: 4px;
+}
+.container .right_side {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+}
+.about {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+.about p {
+  color: #333;
+  text-align: left;
+}
+.right_side ul {
+  color: black;
+}
+
+.edcation li {
+  margin-bottom: 5%;
+}
+.edcation {
+  margin-top: 10%;
+}
+.edcation ul {
+  margin-top: 5%;
+}
+.right_side .years {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 500;
+}
+.course_name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.institue {
+  font-size: 1.2rem;
+  color: steelblue;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.interest {
+  margin-top: 15%;
+}
+.interest .bi,
+.fa {
+  font-size: 1.9rem;
+  color: darkcyan;
+  text-align: center;
+}
+.last_one {
+  margin-top: 30%;
+}
+.last_one .title2 {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.last_one p {
+  line-height: 114%;
+  margin-top: 5%;
+  color: gray;
+}
+.last_one p:hover {
+  color: black;
+}
+.last_one .signature {
+  text-align: right;
+  color: #1c832f;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .years {
+    margin-bottom: 5px;
+  }
+  .tech_skill .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
